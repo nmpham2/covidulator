@@ -2,9 +2,11 @@ import React from 'react';
 import './Home.scss';
 import CovidParticle from '../assets/coronaangry.png';
 
+import { useHistory } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 
 function Home() {
+  const history = useHistory();
   const [scase, setCase] = React.useState(27895979);
   const [country, setCountry] = React.useState('the US');
 
@@ -92,6 +94,10 @@ function Home() {
     setCountry('Mexico')
     console.log(data);
   }
+
+  function goToTest(){
+    history.push('/quiz');
+  }
   
   const cough = milliseconds => { 
     return new Promise(resolve => setTimeout(resolve, milliseconds)); 
@@ -119,7 +125,7 @@ function Home() {
         <h1 className="title">COVID-19 Footprint?</h1>
         <h3 className="cases">There have been {scase} cases in {country}</h3>
         <p className="subtitle">Find out if you're doing your part.</p>
-        <Button href="covidulator/#/quiz" className="take-test-btn">Take the Test</Button>
+        <Button onClick={goToTest} className="take-test-btn">Take the Test</Button>
       </div>
     </div> 
   )
