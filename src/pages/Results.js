@@ -4,8 +4,10 @@ import { results, questions } from '../data.js';
 import Quarter from '../assets/quarter.png';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 
-function Results(props) {
+import { useHistory } from "react-router-dom";
 
+function Results(props) {
+  const history = useHistory();
   const [letterIndex, setLetterIndex] = React.useState(0);
   const [score, setScore] = React.useState(0);
   const [quarter, setQuarter] = React.useState(0);
@@ -41,6 +43,10 @@ function Results(props) {
     }
 
     setScore(totalScore.toFixed(0));
+  }
+
+  function goToTest(){
+    history.push('/quiz');
   }
   
   return (
@@ -131,7 +137,7 @@ function Results(props) {
       </div>
     </div>
 
-    <Button href="/quiz" className="take-test-btn">Take the Test Again</Button>
+    <Button onClick={goToTest} className="take-test-btn">Take the Test Again</Button>
 
     </div>
   )
