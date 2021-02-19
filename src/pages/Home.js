@@ -119,7 +119,7 @@ function Home() {
         <h1 className="title">COVID-19 Footprint?</h1>
         <h3 className="cases">There have been {scase} cases in {country}</h3>
         <p className="subtitle">Find out if you're doing your part.</p>
-        <Button href="/#/quiz" className="take-test-btn">Take the Test</Button>
+        <Button href="covidulator/#/quiz" className="take-test-btn">Take the Test</Button>
       </div>
     </div> 
   )
