@@ -45,8 +45,8 @@ function Results(props) {
     setScore(totalScore.toFixed(0));
   }
 
-  function goToTest(){
-    history.push('/quiz');
+  function goToHome(){
+    history.push('/');
   }
   
   return (
@@ -137,7 +137,7 @@ function Results(props) {
       </div>
     </div>
 
-    <Button onClick={goToTest} className="take-test-btn">Take the Test Again</Button>
+    <Button onClick={goToHome} className="take-test-btn">Take the Test Again</Button>
 
     </div>
   )
