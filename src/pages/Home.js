@@ -99,13 +99,13 @@ function Home() {
     history.push('/quiz');
   }
   
-  const cough = milliseconds => { 
+  /*const cough = milliseconds => { 
     return new Promise(resolve => setTimeout(resolve, milliseconds)); 
   }; 
 
   cough(1000).then(() => { 
     setCase(scase + 1);
-  });
+  });*/
 
 	return (
     <div className="home">
@@ -123,7 +123,7 @@ function Home() {
       <div className="text-container">
         <h2 className="pretitle">WHAT IS YOUR</h2>
         <h1 className="title">COVID-19 Footprint?</h1>
-        <h3 className="cases">There have been {scase} cases in {country}</h3>
+        <h2 className="cases">There have been {scase} cases in {country}</h2>
         <p className="subtitle">Find out if you're doing your part.</p>
         <Button onClick={goToTest} className="take-test-btn">Take the Test</Button>
       </div>

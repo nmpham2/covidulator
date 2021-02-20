@@ -22,7 +22,7 @@ function Results(props) {
     props.score.forEach((e, index) => {
       totalScore += questions[index].answers[e].points;
     })
-    totalScore /= 180;
+    totalScore /= 195;
     totalScore *= 100;
 
     if (totalScore >= 90) {

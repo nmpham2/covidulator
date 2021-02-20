@@ -4,9 +4,9 @@ export const questions = [
     category: "Hygiene",
     answers: [
         { answer: "Never", description: null, points: 0},
-        { answer: "With just water: quick rinse for less than 20s", description: null, points: 2},
-        { answer: "With just water: scrub for at least 20s", description: null, points: 4},
-        { answer: "With soap: quick wash for less than 20s", description: null, points: 7},
+        { answer: "With just water: quick rinse for less than 20s", description: null, points: 12},
+        { answer: "With just water: scrub for at least 20s", description: null, points: 14},
+        { answer: "With soap: quick wash for less than 20s", description: null, points: 16},
         { answer: "With soap: scrub for at least 20s", description: null, points: 20},
     ]
   },
@@ -15,10 +15,10 @@ export const questions = [
     category: "Hygiene",
     answers: [
         { answer: "Never", description: "0 times a day", points: 0},
-        { answer: "Infrequently", description: "Only when your hands are visibly", points: 2},
-        { answer: "Occasionally", description: "Sometimes after going outside", points: 3},
-        { answer: "Often", description: "After you return from the outside, after going to the restroom", points: 10},
-        { answer: "Very often", description: "Anytime you touch outside objects, go to the restroom etc.", points: 15},
+        { answer: "Infrequently", description: "Only when your hands are visibly", points: 12},
+        { answer: "Occasionally", description: "Sometimes after going outside", points: 14},
+        { answer: "Often", description: "After you return from the outside, after going to the restroom", points: 16},
+        { answer: "Very often", description: "Anytime you touch outside objects, go to the restroom etc.", points: 20},
     ]
   },
   {
@@ -26,10 +26,10 @@ export const questions = [
     category: "Protection",
     answers: [
       {answer: "Never", description: null, points: 0},
-      {answer: "Infrequently", description: "When it is mandated", points: 1},
-      {answer: "Occasionally", description: "When you're around other people", points: 3},
-      {answer: "Often", description: "Around every other time you go out", points: 5},
-      {answer: "Always", description: "Anytime you leave the house", points: 20},
+      {answer: "Infrequently", description: "When it is mandated", points: 14},
+      {answer: "Occasionally", description: "When you're around other people", points: 18},
+      {answer: "Often", description: "Around every other time you go out", points: 20},
+      {answer: "Always", description: "Anytime you leave the house", points: 25},
     ]
   },
   {
@@ -37,9 +37,9 @@ export const questions = [
     category: "Prevention",
     answers: [
       {answer: "0", description: null, points: 20},
-      {answer: "1-5", description: null, points: 10},
-      {answer: "6-10", description: null, points: 5},
-      {answer: "11-50", description: null, points: 3},
+      {answer: "1-5", description: null, points: 16},
+      {answer: "6-10", description: null, points: 14},
+      {answer: "11-50", description: null, points: 12},
       {answer: "More than 50", description: null, points: 0},
     ]
   },
@@ -58,10 +58,10 @@ export const questions = [
     question: "How often do you eat out at restaurants (in-person dining)?",
     category: "Consumerism",
     answers: [
-      {answer: "Never", description: null, points: 15},
-      {answer: "Infrequently", description: "Every few months", points: 9},
-      {answer: "Occasionally", description: "Once a month", points: 5},
-      {answer: "Often", description: "Once a week", points: 1},
+      {answer: "Never", description: null, points: 20},
+      {answer: "Infrequently", description: "Every few months", points: 16},
+      {answer: "Occasionally", description: "Once a month", points: 14},
+      {answer: "Often", description: "Once a week", points: 12},
       {answer: "Very often", description: "Multiple times a week", points: 0},
     ]
   },
@@ -69,33 +69,33 @@ export const questions = [
     question: "How often do you leave your house or go out (recreationally)?",
     category: "Consumerism", 
     answers: [
-      {answer: "Never", description: null, points: 23},
-      {answer: "Infrequently", description: "Every few months", points: 14},
-      {answer: "Occasionally", description: "Once a month", points: 10},
-      {answer: "Often", description: "Once a week", points: 2},
-      {answer: "Very often", description: "Multiple times a week", points: 1},
+      {answer: "Never", description: null, points: 20},
+      {answer: "Infrequently", description: "Every few months", points: 16},
+      {answer: "Occasionally", description: "Once a month", points: 14},
+      {answer: "Often", description: "Once a week", points: 12},
+      {answer: "Very often", description: "Multiple times a week", points: 0},
     ]
   },
   {
     question: "How often do you order things online?",
     category: "Consumerism",
     answers: [
-      {answer: "Never", description: null, points: 6},
-      {answer: "Infrequently", description: "Every few months", points: 5},
-      {answer: "Occasionally", description: "Once a month", points: 4},
-      {answer: "Often", description: "Once a week", points: 3},
-      {answer: "Very often", description: "Multiple times a week", points: 2},
+      {answer: "Never", description: null, points: 10},
+      {answer: "Infrequently", description: "Every few months", points: 8},
+      {answer: "Occasionally", description: "Once a month", points: 7},
+      {answer: "Often", description: "Once a week", points: 6},
+      {answer: "Very often", description: "Multiple times a week", points: 0},
     ]
   },
   {
     question: "How often do you order food delivery?",
     category: "Consumerism",
     answers: [
-      {answer: "Never", descripton: null, points: 5},
-      {answer: "Infrequently", description: "Every few months", points: 4},
-      {answer: "Occasionally", description: "Once a month", points: 3},
-      {answer: "Often", description: "Once a week", points: 2},
-      {answer: "Very often", description: "Multiple times a week", points: 1},
+      {answer: "Never", descripton: null, points: 10},
+      {answer: "Infrequently", description: "Every few months", points: 8},
+      {answer: "Occasionally", description: "Once a month", points: 7},
+      {answer: "Often", description: "Once a week", points: 6},
+      {answer: "Very often", description: "Multiple times a week", points: 0},
     ]
   },
   {
@@ -103,10 +103,10 @@ export const questions = [
     category: "Prevention",
     answers: [
       {answer: "Never", description: null, points: 10},
-      {answer: "Infrequently", description: "Every few months", points: 7},
-      {answer: "Occasionally", description: "Once a month", points: 5},
-      {answer: "Often", description: "Once a week", points: 2},
-      {answer: "Very often", description: "Multiple times a week", points: 1},
+      {answer: "Infrequently", description: "Every few months", points: 8},
+      {answer: "Occasionally", description: "Once a month", points: 7},
+      {answer: "Often", description: "Once a week", points: 6},
+      {answer: "Very often", description: "Multiple times a week", points: 0},
     ]
   },
   {
@@ -115,8 +115,8 @@ export const questions = [
     answers: [
       {answer: "Never", description: null, points: 10},
       {answer: "Infrequently", description: "Once a month", points: 8},
-      {answer: "Occasionally", description: "Every other week", points: 6},
-      {answer: "Often", description: "Once a week", points: 4},
+      {answer: "Occasionally", description: "Every other week", points: 7},
+      {answer: "Often", description: "Once a week", points: 6},
       {answer: "Very often", description: "Multiple times a week", points: 0},
     ]
   },
@@ -125,10 +125,10 @@ export const questions = [
     category: "Prevention",
     answers: [
       {answer: "Never", description: null, points: 0},
-      {answer: "Infrequently", description: "When it's mandated", points: 5},
-      {answer: "Occasionally", description: "When you're indoors", points: 10},
-      {answer: "Often", description: "You keep your distance whenever possible", points: 15},
-      {answer: "Always", description: "You keep your distance at all times", points: 20},
+      {answer: "Infrequently", description: "When it's mandated", points: 14},
+      {answer: "Occasionally", description: "When you're indoors", points: 18},
+      {answer: "Often", description: "You keep your distance whenever possible", points: 20},
+      {answer: "Always", description: "You keep your distance at all times", points: 25},
     ]
   },
   // {
